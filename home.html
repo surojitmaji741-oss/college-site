@@ -192,26 +192,51 @@
         <select
           name="dept"
           class="enquiry-inputs"
-          onclick="getcourse(this.value)"
-          required
-          id="dept-select"
+          onchange="getcourse()"
+          id="dept"
           required
         >
-          <option value="">choose a department</option>
-          <?php
-          include("./connection.php");
-          $dept=getdept();
-          foreach($dept as $dep){ 
-          ?>
-          <option value="<?php echo $dep['deptcode'] ?>">
-            <?php echo $dep['dept_name']?>
+          <option value="" selected disabled>choose a department</option>
+          <option value="CSE">
+            Department of computer science and engineering
           </option>
-          <?php
-                    }
-                    ?>
+          <option value="EE">Department of electrical engineering</option>
+          <option value="CE">Department of civil engineering</option>
+          <option value="ME">Department of mechanical engineering</option>
+          <option value="OPT">Department of optometry</option>
+          <option value="IT">Department of information technology</option>
+          <option value="ECE">Department of electronics and communication</option>
+          <option value="BBA">Department of business administration</option>
+          <option value="MBA">Department of business administration</option>
+          <option value="LAW">Department of law</option>
+          <option value="AGRI">Department of agriculture</option>
+          <option value="NURSING">Department of nursing</option>
+          <option value="PHARMA">Department of pharmacy</option>
+          <option value="YOGA">Department of yoga</option>
+          <option value="SCIENCE">Department of basic science</option>
+          <option value="HUMANITIES">Department of humanities</option>
+          <option value="ARCHI">Department of architecture</option>
+          <option value="DESIGN">Department of design</option>
+          <option value="HOTEL">Department of hotel management</option>
+          <option value="MASSCOMM">Department of mass communication</option>
+          <option value="EDUCATION">Department of education</option>
+          <option value="PHYSIOTHERAPY">Department of physiotherapy</option>
+          <option value="DENTAL">Department of dental science</option>
+          <option value="AGRI">Department of agriculture</option>
+          <option value="FASHION">Department of fashion technology</option>
+          <option value="FOODTECH">Department of food technology</option>
+          <option value="LIBRARY">Department of library science</option>
+          <option value="SOCIALWORK">Department of social work</option>
+          <option value="SCIENCE">Department of basic science</option>
+          <option value="HUMANITIES">Department of humanities</option>
         </select>
-        <select name="course" class="enquiry-inputs" disabled>
-          <option value="">choose a course</option>
+        <select
+          name="course"
+          class="enquiry-inputs"
+          id="course"
+          required
+        >
+          <option value="" selected disabled>choose a course</option>
         </select>
         <button class="submit" type="submit">
           Submit<img src="arrow.png" />
