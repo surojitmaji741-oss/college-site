@@ -1,0 +1,223 @@
+<?php require "course.php" ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAMI VIVEKANANDA UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="navbar">
+        <a href="home.html"><img src="logo.png" /></a>
+        <nav>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="#getadmission">GET ADMISSION</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+          <ul class="sidebar">
+            <li onclick="hidesidebar()"><img src="cross.jpg" /></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="#getadmission">GET ADMISSION</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <img src="main-menu.png" onclick="showsidebar()" class="menu-icon" />
+      </div>
+      <div class="row">
+        <div class="col1">
+          <h1><pre>SWAMI VIVEKANANANDA UNIVERSITY</pre></h1>
+          <br /><br />
+          <p>
+            Welcome to Swami Vivekananda University. We are an institution in
+            West Bengal dedicated to the pursuit of knowledge and excellence and
+            providing quality education to our students. Since our inception, we
+            have been striving to provide our students with an exceptional
+            learning experience. Our aim is to facilitate and nurture the growth
+            and development of our students and to ensure that they reach their
+            full potential. We offer a range of undergraduate, postgraduate and
+            diploma courses in a variety of subjects. These courses range from
+            engineering and management to humanities. Our courses are designed
+            to provide students with the skills and expertise required to excel
+            in their chosen fields. Our faculty members are highly experienced
+            and qualified professionals who are committed to providing our
+            students with the best possible education. Our faculty members are
+            experts in their respective fields and are passionate about helping
+            our students develop the knowledge and skills they need to succeed.
+            We strive to create a learning environment where our students can
+            grow and develop in a safe and supportive environment.
+          </p>
+          <button type="button">Explore</button>
+        </div>
+        <div class="col2">
+          <div class="card card1"></div>
+          <div class="card card2"></div>
+          <div class="card card3"></div>
+          <div class="card card4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="getadmission" id="getadmission">
+        <h3 class="formtitle">Get Admission Now</h3>
+        <div class="mainuserinfo">
+          <form action="" method="">
+            <div class="userinputbox">
+              <input type="text" name="name" required />
+              <label for="">Enter your name</label>
+            </div>
+            <div class="userinputbox">
+              <input type="text" name="email" required />
+              <label for="">Enter your email</label>
+            </div>
+            <div class="userinputbox">
+              <input type="text" name="whatsapp" required />
+              <label for="">Enter your whatsapp number</label>
+            </div>
+            <div class="userinputbox">
+              <input type="text" name="course" required />
+              <label for="">Enter course</label>
+            </div>
+            <div class="userinputall">
+              <div class="userinput1">
+                <div class="userinputbox">
+                  <input type="text" name="address" required />
+                  <label for="">Enter your address</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="dob" required />
+                  <label for="">Enter your DOB</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="fathersname" required />
+                  <label for="">Fathers name</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="fathersoccupation" required />
+                  <label for="">Occupation</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="mothersno" required />
+                  <label for="">Mobile no</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="district" required />
+                  <label for="">District name</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="guardianno" required />
+                  <label for="">Mobile no</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="relguardian" required />
+                  <label for="">Relation with guardians</label>
+                </div>
+              </div>
+              <div class="userinput2">
+                <div class="userinputbox">
+                  <input type="text" name="pin" required />
+                  <label for="">Enter your pincode</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="nationality" required />
+                  <label for="">Nationality</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="fathersno" required />
+                  <label for="">Mobile no</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="mothersname" required />
+                  <label for="">Mothers name</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="mothersoccupation" required />
+                  <label for="">Occupation</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="guardiansname" required />
+                  <label for="">Guardians name</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="guardiansname" required />
+                  <label for="">Occupation</label>
+                </div>
+                <div class="userinputbox">
+                  <input type="text" name="income" required />
+                  <label for="">Annual income</label>
+                </div>
+              </div>
+            </div>
+            <button class="submit" type="submit1">
+              Submit<img src="arrow.png" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="title">
+        <h5>x</h5>
+        <h4>Enquiry now</h4>
+        <hr />
+      </div>
+      <form name="deptform" action="" method="post">
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Full name"
+          class="enquiry-inputs"
+          required
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          class="enquiry-inputs"
+          required
+        />
+        <input
+          type="text"
+          name="phone number"
+          placeholder="Phone number"
+          class="enquiry-inputs"
+          required
+        />
+        <select
+          name="dept"
+          class="enquiry-inputs"
+          onclick="getcourse(this.value)"
+          required
+          id="dept-select"
+          required
+        >
+          <option value="">choose a department</option>
+          <?php
+          include("./connection.php");
+          $dept=getdept();
+          foreach($dept as $dep){ 
+          ?>
+          <option value="<?php echo $dep['deptcode'] ?>">
+            <?php echo $dep['dept_name']?>
+          </option>
+          <?php
+                    }
+                    ?>
+        </select>
+        <select name="course" class="enquiry-inputs" disabled>
+          <option value="">choose a course</option>
+        </select>
+        <button class="submit" type="submit">
+          Submit<img src="arrow.png" />
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
